@@ -1,3 +1,9 @@
+AdminUser() {
+        user_name = "Sougata Ghsoh";
+        email = "ghoshsougataa@gmail.com";
+        password = "Sougata@123";
+}
+
 void AdminUser::login() {
     string email, password;
     cout << "ENTER EMAIL : ";
