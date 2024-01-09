@@ -1,3 +1,9 @@
+#include "RegularUser.h"
+#include "AdminUser.h"
+#include "User.h"
+
+using namespace std;
+
 void RegularUser::Register() {
     cout << "ENTER USER ID : ";
     getline(cin, user_id);
