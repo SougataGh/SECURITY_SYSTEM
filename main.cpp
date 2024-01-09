@@ -1,3 +1,11 @@
+#include <fstream>
+#include <iostream>
+#include <string>
+#include "User.h"
+#include "AdminUser.h"
+#include "RegularUser.h"
+using namespace std;
+
 int main() {
     User u;
     AdminUser Adminu;
