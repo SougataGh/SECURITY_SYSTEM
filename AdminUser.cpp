@@ -1,4 +1,10 @@
-AdminUser() {
+#include "RegularUser.h"
+#include "AdminUser.h"
+#include "User.h"
+
+using namespace std;
+
+AdminUser::AdminUser() {
         user_name = "Sougata Ghsoh";
         email = "ghoshsougataa@gmail.com";
         password = "Sougata@123";
