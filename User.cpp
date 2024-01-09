@@ -1,3 +1,12 @@
+#include <fstream>
+#include <iostream>
+#include <string>
+#include "User.h"
+#include "AdminUser.h"
+#include "RegularUser.h"
+
+using namespace std;
+
 void User::Register() {
     cout << "ENTER USER NAME : ";
     getline(cin, user_name);
