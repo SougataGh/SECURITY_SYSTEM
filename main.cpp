@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    User u;
+    User user_ptr=new User;
     AdminUser Adminu;
     RegularUser Regularu;
     cout << "----------------------------------------------\n";
@@ -26,34 +26,39 @@ int main() {
     switch (ch) {
     case '1':
         cin.ignore();
-        u.Register();
+       user_ptr->Register();
         break;
     case '2':
+        user_ptr=new RegularUser;
         cin.ignore();
-        Regularu.Register();
+        user_ptr->Register();
         break;
     case '3':
+        user_ptr=new  AdminUser;
         cin.ignore();
-        Adminu.login();
+        user_ptr->login();
     case '4':
+        user_ptr=new  AdminUser;
         cin.ignore();
-        Adminu.show_all_User();
+        user_ptr->show_all_User();
         break;
     case '5':
         cin.ignore();
-        u.login();
+        user_ptr->login();
         break;
     case '6':
+        user_ptr=new RegularUser;
         cin.ignore();
-        Regularu.login();
+        user_ptr->login();
         break;
     case '7':
         cin.ignore();
-        u.forgetPassword();
+        user_ptr->forgetPassword();
         break;
     case '8':
+        user_ptr=new RegularUser;
         cin.ignore();
-        Regularu.forgetPassword();
+        user_ptr->forgetPassword();
         break;
     default:
         cout << "INVALID CHOICE!........\n";
