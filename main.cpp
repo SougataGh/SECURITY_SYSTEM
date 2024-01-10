@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    User user_ptr=new User;
+    User *user_ptr=new User;
     cout << "----------------------------------------------\n";
     cout << "1) REGISTER AS NORMAL USER \n";
     cout << "2) REGISTER AS REGULAR USER \n";
