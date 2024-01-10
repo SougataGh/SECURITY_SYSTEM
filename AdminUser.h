@@ -1,4 +1,4 @@
-class AdminUser : User {
+class AdminUser : public User {
 public:
     AdminUser();
 
